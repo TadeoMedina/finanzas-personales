@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+
+  /* Light (simple y limpio) */
+  --fipe-bg: #ffffff;
+  --fipe-surface: #ffffff;
+  --fipe-surface2: #f4f4f5;
+  --fipe-border: #e4e4e7;
+  --fipe-text: #18181b;
+  --fipe-muted: #71717a;
+}
+
+html.dark {
+  color-scheme: dark;
+
+  /* Dark palette (de tu imagen) */
+  --fipe-bg: #282828;
+  --fipe-surface: #303030;
+  --fipe-surface2: #353535;
+  --fipe-border: #3f3f3f;
+  --fipe-text: #f4f4f5;
+  --fipe-muted: #a1a1aa;
+}
+
+body {
+  background: var(--fipe-bg);
+  color: var(--fipe-text);
+}
